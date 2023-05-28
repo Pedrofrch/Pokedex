@@ -20,7 +20,6 @@ function SearchBar() {
   async function handleSubmit(event) {
     event.preventDefault();
 
-    // verifica se o nome do Pokémon é válido
     const isPokemonValid = await isValidPokemonName(
       searchPokemon.toLowerCase()
     );
